@@ -1,5 +1,5 @@
 .navbar-nav {
-    margin: auto; 
+    margin: auto;
 }
 .navbar {
     background-color: #1E3A8A !important;
@@ -71,20 +71,21 @@
     font-weight: 600;
     opacity: 0.9;
 }
-.image-container { 
+.image-container {
     position: relative; /* Allows the background image to be positioned */
-    background-image: url(images/pngwing.com\ \(1\).png); /* Your image path here */
+    background-image: url('images/pngwing.com\ \(1\).png'); /* Add your image path here */
     background-size: cover; /* Makes the image cover the full container */
+    background-position: center; /* Centers the image */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-   
-    width: 100%; /* Full width of the container */
-    z-index: 1;
+    padding: 20px;
+    height: 100vh;
 }
 
 .image-container h1 {
+    width: auto;
     position: absolute; /* Position text over the image */
     top: 50%; /* Vertically center the text */
     left: 50%; /* Horizontally center the text */
@@ -93,7 +94,8 @@
     letter-spacing: 4px;
     font-weight: bold;
     color: transparent; /* Makes the text invisible */
-    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Text stroke to make it visible */
-    z-index: -1; /* Push the text behind */
+    -webkit-text-stroke: 1px rgba(221, 221, 221, 0.61); /* Text stroke to make it visible */
+    z-index: 1; /* Push the text behind */
 }
+
 
