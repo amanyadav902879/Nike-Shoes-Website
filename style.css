@@ -73,7 +73,7 @@
 }
 .image-container {
     position: relative; /* Allows the background image to be positioned */
-    background-image: url('images/pngwing.com\ \(1\).png'); /* Add your image path here */
+    background-image: url(images/pngwing.com\ \(1\).png); /* Your image path here */
     background-size: cover; /* Makes the image cover the full container */
     background-position: center; /* Centers the image */
     display: flex;
@@ -81,21 +81,47 @@
     align-items: center;
     text-align: center;
     padding: 20px;
-    height: 100vh;
+    height: 100vh; /* Full height of the viewport */
 }
 
 .image-container h1 {
-    width: auto;
+    min-width: 100px;
     position: absolute; /* Position text over the image */
     top: 50%; /* Vertically center the text */
     left: 50%; /* Horizontally center the text */
     transform: translate(-50%, -50%); /* Adjust the text position to be perfectly centered */
-    font-size: 260px;
+    font-size: 260px; /* Large font size */
     letter-spacing: 4px;
     font-weight: bold;
     color: transparent; /* Makes the text invisible */
     -webkit-text-stroke: 1px rgba(221, 221, 221, 0.61); /* Text stroke to make it visible */
-    z-index: 1; /* Push the text behind */
+    z-index: 1; /* Ensure the text is in front */
 }
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 1200px) {
+    .image-container h1 {
+        font-size: 200px; /* Reduce font size on medium screens */
+    }
+}
+
+@media (max-width: 992px) {
+    .image-container h1 {
+        font-size: 150px; /* Further reduce font size for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .image-container h1 {
+        font-size: 120px; /* Smaller font for smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .image-container h1 {
+        font-size: 100px; /* Smaller font for mobile screens */
+    }
+}
+
 
 
