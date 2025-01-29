@@ -1,0 +1,99 @@
+.navbar-nav {
+    margin: auto; 
+}
+.navbar {
+    background-color: #1E3A8A !important;
+}
+.navbar-brand, .nav-link {
+    color: #FFFFFF !important; 
+}
+.nav-link:hover {
+    color: #38BDF8 !important; 
+}
+.dropdown-menu {
+    background-color: #1E3A8A; 
+}
+.dropdown-item {
+    color: #5cecff !important;
+}
+.dropdown-item:hover {
+    background-color: #38BDF8 !important; 
+    color: #000 !important;
+}
+.icons i {
+    color: #FFFFFF !important;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.icons i:hover {
+    color: #38BDF8 !important;
+}
+.btn-primary {
+    background-color: #1E3A8A; /* Dark Blue Button */
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+}
+.btn-primary:hover {
+    background-color: #38BDF8; /* Light Blue Hover */
+}
+.main-content {
+    background-color: #1D1616; 
+    padding: 60px 0;
+    
+}
+.main-content h1 {
+    color: #1E3A8A; /* Dark Blue Title */
+}
+.main-content p {
+    color: #d6d6d6;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.stats-section {
+    background-color: #d3deff; /* Dark Blue Background */
+    padding: 40px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+.stat-number {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    opacity: 0.9;
+}
+.image-container { 
+    position: relative; /* Allows the background image to be positioned */
+    background-image: url(images/pngwing.com\ \(1\).png); /* Your image path here */
+    background-size: cover; /* Makes the image cover the full container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+    width: 100%; /* Full width of the container */
+    z-index: 1;
+}
+
+.image-container h1 {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Vertically center the text */
+    left: 50%; /* Horizontally center the text */
+    transform: translate(-50%, -50%); /* Adjust the text position to be perfectly centered */
+    font-size: 260px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: transparent; /* Makes the text invisible */
+    -webkit-text-stroke: 1px rgb(255, 255, 255); /* Text stroke to make it visible */
+    z-index: -1; /* Push the text behind */
+}
+
